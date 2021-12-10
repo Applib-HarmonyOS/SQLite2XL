@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 apply plugin: 'com.huawei.ohos.app'
 apply plugin: 'org.sonarqube'
-
+apply plugin: 'checkstyle'
 //For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
 ohos {
     compileSdkVersion 6
@@ -35,16 +35,34 @@ allprojects {
         maven {
             url 'https://developer.huawei.com/repo/'
         }
+        maven {
+            url 'https://mirrors.huaweicloud.com/repository/maven/'
+        }
 		jcenter()
     }
+    task checkstyle(type: Checkstyle) {
+        showViolations = true
+        configFile file("config/checkstyle.xml")
+        source 'entry/src/main/java'
+        source 'dpreference/src/main/java'
+        include '**/*.java'
+
+        // empty classpath
+        classpath = files()
+    }
+}
+
+checkstyle {
+    toolVersion "8.43"
 }
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "SQLite2XL"
+        property "sonar.projectKey", "applibgroup_SQLite2XL"
         property "sonar.organization", "applibgroup"
-        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.sources", "entry,library"
-        property "sonar.java.binaries", "entry/build"
+        property "sonar.java.binaries", "entry/build,library/build"
+        property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
     }
 }

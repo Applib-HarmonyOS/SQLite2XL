@@ -126,8 +126,7 @@ excelToSqlite.importFromFile(directoryPath, new ExcelToSqLite.ImportListener() {
 ```
 
 ## Future Work
-Current sample app exports file into application data partition and also imports from the same file into database.
-As an extension, Export and import can be tried with external storage paths and with customizable file paths.
+Current sample app exports file into application data partition and also imports from the same file into database. As an extension, Export and import can be tried with external storage paths and with customizable file paths.
                                                                                                    
 ## Licence
 ```
