@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$ohos:color:id_color_background"
+    ohos:orientation="vertical"
+    ohos:padding="8fp">
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:weight="1">
+        <TextField
+            ohos:id="$+id:edt_file_path"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:hint="$string:file_path"
+            ohos:text_size="40fp"
+            ohos:hint_color="$color:colorPrimaryDark"
+            ohos:text_color="$color:colorPrimaryDark"
+            ohos:text_input_type="pattern_text"
+            ohos:weight="1"/>
+        <Button
+            ohos:id="$+id:btn_import"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="40fp"
+            ohos:background_element="$color:colorPrimary"
+            ohos:left_margin="5vp"
+            ohos:text="$string:import_text"
+            ohos:text_color="$color:colorAccent"
+            ohos:weight="1"/>
+    </DirectionalLayout>
+</DirectionalLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:content_main"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:bottom_padding="$float:vertical_margin"
+    ohos:left_padding="$float:horizontal_margin"
+    ohos:orientation="vertical"
+    ohos:right_padding="$float:horizontal_margin"
+    ohos:top_padding="$float:vertical_margin">
+    <Button
+        ohos:id="$+id:btnSQL2XL"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="40fp"
+        ohos:background_element="$color:colorPrimary"
+        ohos:text="$string:sqlite_2_excel"
+        ohos:text_color="$color:colorAccent"/>
+    <Button
+        ohos:id="$+id:btnXL2SQL"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="40fp"
+        ohos:background_element="$color:colorPrimary"
+        ohos:text="$string:excel_2_sqlite"
+        ohos:text_color="$color:colorAccent"
+        ohos:top_margin="10vp"/>
+</DirectionalLayout>
