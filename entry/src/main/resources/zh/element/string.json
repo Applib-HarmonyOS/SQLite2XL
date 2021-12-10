@@ -14,7 +14,7 @@
     },
     {
       "name": "sqlablity_description",
-      "value": "Java_Empty Ability"
+      "value": "SQLite2XL"
     },
     {
       "name": "entry_Excel2SQLiteAbility",
@@ -22,7 +22,7 @@
     },
     {
       "name": "excel2sqliteability_description",
-      "value": "Java_Empty Ability"
+      "value": "SQLite2XL library"
     },
     {
       "name": "entry_SQLite2Excel",
@@ -30,7 +30,7 @@
     },
     {
       "name": "sqlite2excel_description",
-      "value": "Java_Empty Ability"
+      "value": "SQLite2XL library to convert SQLite Database to Excel and Convert Excel to SQLite"
     }
   ]
 }
