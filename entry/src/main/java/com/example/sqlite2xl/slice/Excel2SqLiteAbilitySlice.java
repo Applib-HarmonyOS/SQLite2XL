@@ -32,17 +32,16 @@ import java.io.File;
  * Sample app to test the SQLite2XL library functionality.
  */
 public class Excel2SqLiteAbilitySlice extends AbilitySlice {
-    TextField edtFilePath;
-    Button btnImport;
-    DbHelper dbHelper;
-    DbQueries dbQueries;
-    String directoryPath;
+    private TextField edtFilePath;
+    private Button btnImport;
+    private DbQueries dbQueries;
+    private String directoryPath;
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_excel2_sqlite);
-        dbHelper = new DbHelper(getApplicationContext());
+        DbHelper dbHelper = new DbHelper(getApplicationContext());
         dbQueries = new DbQueries(getApplicationContext());
         File cacheDir = this.getDataDir();
         directoryPath = cacheDir.getAbsolutePath() + "/Backup/users.xls";

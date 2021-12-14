@@ -5,14 +5,16 @@ A HMOS library to convert SQLite Database to Excel and Convert Excel to SQLite.
 Inspired by [androidmads/SQLite2XL](https://github.com/androidmads/SQLite2XL) - version v1.0.2
 
 ## Features
-1) This library provides user the functions to export SQLite Database to Excel and import Excel data to SQLite database.
-2) This sample application has two buttons, user can choose SQLite 2 Excel and Excel 2 SQLite. 
-3) When the user clicks on the button SQLite 2 Excel, user gets to add the name and phone number of a person.
-4) User has to save the entered data by clicking the Save button, the data which is saved is displayed on the screen.
-5) User has to click on Export button to export the data to the desired xml file.
-6) Then User has to click on Excel 2 SQLite button and import the data from the xml file to database.
-7) User can now click on SQLite 2 Excel to check if the data is imported.
-8) Export with Exclude button will export the data to another xml file excluding the contact number entered by the user.
+This library provides user the functions to export SQLite Database to Excel and import Excel data to SQLite database.
+
+## Usage of library in Sample App
+1) This sample application has two buttons, user can choose SQLite 2 Excel and Excel 2 SQLite. 
+2) When the user clicks on the button SQLite 2 Excel, user gets to add the name and phone number of a person.
+3) User has to save the entered data by clicking the Save button, the data which is saved is displayed on the screen.
+4) User has to click on Export button to export the data to the desired xml file.
+5) Then User has to click on Excel 2 SQLite button and import the data from the xml file to database.
+6) User can now click on SQLite 2 Excel to check if the data is imported.
+7) Export with Exclude button will export the data to another xml file excluding the contact number entered by the user.
 
 ## Exporting from SQLite to Excel
 <img src="screenshots/sqlitetoexcel.gif" width="500">
@@ -21,16 +23,16 @@ Inspired by [androidmads/SQLite2XL](https://github.com/androidmads/SQLite2XL) - 
 <img src="screenshots/exceltosqlite.gif" width="500">
 
 ## Dependency
-1. For using library module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
+1. For using sqlite2xl module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
 ```groovy
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
-    implementation project(path: ':library')
+    implementation project(path: ':sqlite2xl')
     testImplementation 'junit:junit:4.13'
     ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
 }
 ```
-2. For using library in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+2. For using sqlite2xl in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
 ```groovy
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.har'])

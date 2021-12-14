@@ -48,17 +48,16 @@ import java.util.Map;
  */
 public class SqLite2ExcelSlice extends AbilitySlice {
     public static final HiLogLabel HI_LOG_LABEL = new HiLogLabel(0, 0, "SqLite2ExcelSlice");
-    TextField edtUser;
-    TextField edtContactNo;
-    Button btnExport;
-    Button btnSaveUser;
-    Button btnExportExclude;
-    ListContainer lvUsers;
-    CustomAdapter lvUserAdapter;
-    List<Users> usersList = new ArrayList<>();
-    DbHelper dbHelper;
-    DbQueries dbQueries;
-    SqLiteToExcel sqliteToExcel;
+    private TextField edtUser;
+    private TextField edtContactNo;
+    private Button btnExport;
+    private Button btnSaveUser;
+    private Button btnExportExclude;
+    private ListContainer lvUsers;
+    private CustomAdapter lvUserAdapter;
+    private List<Users> usersList = new ArrayList<>();
+    private DbQueries dbQueries;
+    private SqLiteToExcel sqliteToExcel;
 
     @Override
     public void onStart(Intent intent) {
@@ -183,7 +182,7 @@ public class SqLite2ExcelSlice extends AbilitySlice {
     }
 
     void initViews() {
-        dbHelper = new DbHelper(getApplicationContext());
+        DbHelper dbHelper = new DbHelper(getApplicationContext());
         dbQueries = new DbQueries(getApplicationContext());
         edtUser = (TextField) findComponentById(ResourceTable.Id_edt_user);
         edtContactNo = (TextField) findComponentById(ResourceTable.Id_edt_c_no);

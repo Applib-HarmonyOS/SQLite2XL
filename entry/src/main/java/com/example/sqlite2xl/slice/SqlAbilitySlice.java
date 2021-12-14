@@ -26,8 +26,8 @@ import com.example.sqlite2xl.ResourceTable;
  * Sample app to test the SQLite2XL library functionality.
  */
 public class SqlAbilitySlice extends AbilitySlice {
-    Button btnSql2Xl;
-    Button btnXl2Sql;
+    private Button btnSql2Xl;
+    private Button btnXl2Sql;
 
     @Override
     public void onStart(Intent intent) {

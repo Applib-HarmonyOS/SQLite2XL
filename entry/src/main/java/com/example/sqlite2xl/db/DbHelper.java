@@ -12,8 +12,8 @@ import ohos.data.rdb.StoreConfig;
 public class DbHelper extends RdbOpenCallback {
     public static final String DB_NAME = "sqlite2ExcelDemo";
     private static final int DB_VERSION = 1;
-    DatabaseHelper hmosDatabaseHelper;
-    RdbStore hmosRdbStore;
+    private DatabaseHelper hmosDatabaseHelper;
+    private RdbStore hmosRdbStore;
 
     /**
      * DbHelper constructor.

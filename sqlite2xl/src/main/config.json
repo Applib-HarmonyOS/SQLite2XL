@@ -20,7 +20,7 @@
     ],
     "distro": {
       "deliveryWithInstall": true,
-      "moduleName": "library",
+      "moduleName": "sqlite2xl",
       "moduleType": "har"
     }
   }

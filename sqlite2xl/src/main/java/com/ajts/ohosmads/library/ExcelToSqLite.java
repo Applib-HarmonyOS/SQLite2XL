@@ -178,7 +178,7 @@ public class ExcelToSqLite {
                 }
             }
             while (rit.hasNext()) {
-                ritHasNext(rit, columns, sheet);
+                 ritInsertNextRow(rit, columns, sheet);
             }
         } finally {
             if (cursor != null) {
@@ -187,7 +187,7 @@ public class ExcelToSqLite {
         }
     }
 
-    private void ritHasNext(Iterator<Row> rit, List<String> columns, Sheet sheet) {
+    private void ritInsertNextRow(Iterator<Row> rit, List<String> columns, Sheet sheet) {
         Row row = rit.next();
         ValuesBucket values = new ValuesBucket();
         for (int n = 0; n < row.getPhysicalNumberOfCells(); n++) {

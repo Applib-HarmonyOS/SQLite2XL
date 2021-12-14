@@ -21,8 +21,8 @@ buildscript {
 		jcenter()
     }
     dependencies {
-        classpath 'com.huawei.ohos:hap:2.4.4.2'
-        classpath 'com.huawei.ohos:decctest:1.2.4.0'
+        classpath 'com.huawei.ohos:hap:3.0.3.4'
+        classpath 'com.huawei.ohos:decctest:1.2.6.0'
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3"
     }
 }
@@ -44,7 +44,7 @@ allprojects {
         showViolations = true
         configFile file("config/checkstyle.xml")
         source 'entry/src/main/java'
-        source 'library/src/main/java'
+        source 'sqlite2xl/src/main/java'
         include '**/*.java'
 
         // empty classpath
@@ -61,8 +61,8 @@ sonarqube {
         property "sonar.projectKey", "applibgroup_SQLite2XL"
         property "sonar.organization", "applibgroup"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.sources", "entry,library"
-        property "sonar.java.binaries", "entry/build,library/build"
+        property "sonar.sources", "entry,sqlite2xl"
+        property "sonar.java.binaries", "entry/build,sqlite2xl/build"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
     }
 }
