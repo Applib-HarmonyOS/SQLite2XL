@@ -178,7 +178,7 @@ public class ExcelToSqLite {
                 }
             }
             while (rit.hasNext()) {
-                 ritInsertNextRow(rit, columns, sheet);
+                ritInsertNextRow(rit, columns, sheet);
             }
         } finally {
             if (cursor != null) {

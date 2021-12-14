@@ -26,15 +26,13 @@ import com.example.sqlite2xl.ResourceTable;
  * Sample app to test the SQLite2XL library functionality.
  */
 public class SqlAbilitySlice extends AbilitySlice {
-    private Button btnSql2Xl;
-    private Button btnXl2Sql;
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
         setUIContent(ResourceTable.Layout_sql_ablity);
-        btnXl2Sql = (Button) findComponentById(ResourceTable.Id_btnXL2SQL);
-        btnSql2Xl = (Button) findComponentById(ResourceTable.Id_btnSQL2XL);
+        Button btnXl2Sql = (Button) findComponentById(ResourceTable.Id_btnXL2SQL);
+        Button btnSql2Xl = (Button) findComponentById(ResourceTable.Id_btnSQL2XL);
 
         btnXl2Sql.setClickedListener(new Component.ClickedListener() {
             @Override

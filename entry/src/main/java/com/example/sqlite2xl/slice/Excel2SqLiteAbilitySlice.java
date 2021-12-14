@@ -32,8 +32,6 @@ import java.io.File;
  * Sample app to test the SQLite2XL library functionality.
  */
 public class Excel2SqLiteAbilitySlice extends AbilitySlice {
-    private TextField edtFilePath;
-    private Button btnImport;
     private DbQueries dbQueries;
     private String directoryPath;
 
@@ -41,12 +39,11 @@ public class Excel2SqLiteAbilitySlice extends AbilitySlice {
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_excel2_sqlite);
-        DbHelper dbHelper = new DbHelper(getApplicationContext());
         dbQueries = new DbQueries(getApplicationContext());
         File cacheDir = this.getDataDir();
         directoryPath = cacheDir.getAbsolutePath() + "/Backup/users.xls";
-        edtFilePath = (TextField) findComponentById(ResourceTable.Id_edt_file_path);
-        btnImport = (Button) findComponentById(ResourceTable.Id_btn_import);
+        TextField edtFilePath = (TextField) findComponentById(ResourceTable.Id_edt_file_path);
+        Button btnImport = (Button) findComponentById(ResourceTable.Id_btn_import);
         edtFilePath.setText(directoryPath);
 
         btnImport.setClickedListener(new Component.ClickedListener() {

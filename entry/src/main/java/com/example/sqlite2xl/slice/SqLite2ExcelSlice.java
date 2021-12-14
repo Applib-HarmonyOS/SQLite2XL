@@ -182,7 +182,6 @@ public class SqLite2ExcelSlice extends AbilitySlice {
     }
 
     void initViews() {
-        DbHelper dbHelper = new DbHelper(getApplicationContext());
         dbQueries = new DbQueries(getApplicationContext());
         edtUser = (TextField) findComponentById(ResourceTable.Id_edt_user);
         edtContactNo = (TextField) findComponentById(ResourceTable.Id_edt_c_no);
