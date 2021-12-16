@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "SQLite2XL2SQLite"
+    },
+    {
+      "name": "mainability_description",
+      "value": "SQLite2XL2SQLite Library"
+    },
+    {
+      "name": "sqlablity_description",
+      "value": "SQLite2XL2SQLite Library to Convert SQLite Database to Excel and Convert Excel to SQLite"
+    },
+    {
+      "name": "entry_SqlAblity",
+      "value": "SQLite2XL2SQLite entry SqlAblity"
+    },
+    {
+      "name": "save",
+      "value": "Save"
+    },
+    {
+      "name": "hint_enter_name",
+      "value": "Enter Name"
+    },
+    {
+      "name": "export",
+      "value": "Export"
+    },
+    {
+      "name": "export_exclude",
+      "value": "Export with Exclude"
+    },
+    {
+      "name": "sqlite_2_excel",
+      "value": "SQLite 2 Excel"
+    },
+    {
+      "name": "excel_2_sqlite",
+      "value": "Excel 2 SQLite"
+    },
+    {
+      "name": "import_text",
+      "value": "Import"
+    },
+    {
+      "name": "pick",
+      "value": "Pick"
+    },
+    {
+      "name": "file_path",
+      "value": "File Path"
+    },
+    {
+      "name": "hint_enter_phone_number",
+      "value": "Enter Phone Number"
+    }
+  ]
+}
