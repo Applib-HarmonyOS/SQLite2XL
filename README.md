@@ -1,7 +1,10 @@
+[![.github/workflows/main.yml](https://github.com/applibgroup/SQLite2XL/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/SQLite2XL/actions/workflows/main.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_SQLite2XL&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=applibgroup_SQLite2XL)
+
 # SQLite2XL
 A HMOS library to convert SQLite Database to Excel and Convert Excel to SQLite.
 
-# Source
+## Source
 Inspired by [androidmads/SQLite2XL](https://github.com/androidmads/SQLite2XL) - version v1.0.2
 
 ## Features
@@ -36,6 +39,14 @@ dependencies {
 ```groovy
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.har'])
+    testImplementation 'junit:junit:4.13'
+}
+```
+
+3. For using sqlite2xl from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+```groovy
+dependencies {
+    implementation 'dev.applibgroup:sqlite2xl:1.0.0'
     testImplementation 'junit:junit:4.13'
 }
 ```
